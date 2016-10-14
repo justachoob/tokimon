@@ -24,4 +24,14 @@ Rails.application.routes.draw do
   resources :tokimons
   resources :trainers
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  
+  root 'trainers#index'
+  
+  #create display pages
+  #get 'tokimons/display' 
+  #resources :tokimons do
+  #  member do
+  #    get 'display'
+  #  end
+  #end
 end
