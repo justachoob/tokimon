@@ -51,5 +51,11 @@
   <%= @tokimon.total %>
 </p>
 
+<p>
+  <strong>Belongs to Trainer:</strong>
+  <%= @tokimon.trainer.trname %>
+</p>
+
 <%= link_to 'Edit', edit_tokimon_path(@tokimon) %> |
-<%= link_to 'Back', tokimons_path %>
+<%= link_to 'Back', tokimons_path %>  |
+<%= link_to 'Visit Trainer Page', @tokimon.trainer %>

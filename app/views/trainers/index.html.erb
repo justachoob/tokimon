@@ -23,7 +23,7 @@
         <td><%= trainer.gender %></td>
         <td><%= trainer.country %></td>
         <td><%= trainer.motto %></td>
-        <td><%= trainer.trid %></td>
+        <td><%= trainer.id %></td>
         <td><%= link_to 'Show', trainer %></td>
         <td><%= link_to 'Edit', edit_trainer_path(trainer) %></td>
         <td><%= link_to 'Destroy', trainer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -35,3 +35,4 @@
 <br>
 
 <%= link_to 'New Trainer', new_trainer_path %>
+<%= link_to 'List of Tokimons', tokimons_path %>

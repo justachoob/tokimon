@@ -12,53 +12,53 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :tkname %>
+    <%= f.label("Tokimon Name") %>
     <%= f.text_field :tkname %>
   </div>
 
   <div class="field">
-    <%= f.label :weight %>
-    <%= f.number_field :weight %>
+    <%= f.label("Weight in Pounds") %>
+    <%= f.number_field :weight, :min => 0 %>
   </div>
 
   <div class="field">
-    <%= f.label :height %>
-    <%= f.number_field :height %>
+    <%= f.label("Height in CM") %>
+    <%= f.number_field :height, :min => 0 %>
   </div>
 
   <div class="field">
     <%= f.label :fly %>
-    <%= f.number_field :fly %>
+    <%= f.number_field :fly, :min => 0, :max => 100 %>
   </div>
 
   <div class="field">
     <%= f.label :fight %>
-    <%= f.number_field :fight %>
+    <%= f.number_field :fight, :min => 0, :max => 100 %>
   </div>
 
   <div class="field">
     <%= f.label :fire %>
-    <%= f.number_field :fire %>
+    <%= f.number_field :fire, :min => 0, :max => 100 %>
   </div>
 
   <div class="field">
     <%= f.label :water %>
-    <%= f.number_field :water %>
+    <%= f.number_field :water, :min => 0, :max => 100 %>
   </div>
 
   <div class="field">
     <%= f.label :electric %>
-    <%= f.number_field :electric %>
+    <%= f.number_field :electric, :min => 0, :max => 100 %>
   </div>
 
   <div class="field">
     <%= f.label :ice %>
-    <%= f.number_field :ice %>
+    <%= f.number_field :ice, :min => 0, :max => 100 %>
   </div>
 
   <div class="field">
     <%= f.label :total %>
-    <%= f.number_field :total %>
+    
   </div>
   
     <div class="field">

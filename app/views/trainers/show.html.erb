@@ -30,5 +30,13 @@
   <%= @trainer.id %>
 </p>
 
+<h3>Related Tokimon</h3>
+
+<ul>
+  <% @trainer.tokimons.each do |tokimon| %>
+    <li><%= tokimon.tkname %> <%= link_to "Details", tokimon_path(tokimon) %></li>
+  <% end %>
+</ul>
+
 <%= link_to 'Edit', edit_trainer_path(@trainer) %> |
 <%= link_to 'Back', trainers_path %>

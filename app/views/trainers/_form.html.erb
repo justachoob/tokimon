@@ -13,18 +13,18 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :trname %>
+    <%= f.label("Trainer Name") %>
     <%= f.text_field :trname %>
   </div>
 
   <div class="field">
     <%= f.label :level %>
-    <%= f.number_field :level %>
+    
   </div>
 
   <div class="field">
     <%= f.label :gender %>
-    <%= f.text_field :gender %>
+    <%= f.select :gender, ["Male", "Female", "Other"] %>
   </div>
 
   <div class="field">
@@ -39,7 +39,7 @@
 
   <div class="field">
     <%= f.label :id %>
-    <%= f.number_field :id %>
+    
   </div>
 
   <div class="actions">
