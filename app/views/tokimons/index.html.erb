@@ -23,7 +23,7 @@
 
   <tbody>
     <% @tokimons.each do |tokimon| %>
-      <tr>
+      <tr class="<%= cycle('odd', 'even') %>">
         <td><%= tokimon.tkname %></td>
         <td><%= tokimon.weight %></td>
         <td><%= tokimon.height %></td>
@@ -47,3 +47,9 @@
 
 <%= link_to 'New Tokimon', new_tokimon_path %>
 <%= link_to 'Trainers', trainers_path %>
+
+<br>
+<br>
+
+
+<%= link_to 'Display Relative', tokimons_display_path %>

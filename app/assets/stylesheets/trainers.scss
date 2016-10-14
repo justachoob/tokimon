@@ -1,3 +1,23 @@
 // Place all the styles related to the Trainers controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+table {
+  height: 30px;
+  width: 1200px;
+  border: 1px solid;
+  border-color: black;
+  text-align: center;
+}
+
+thead {
+  background-color: #4286f4;
+  color: white;
+}
+
+.odd {
+  background: #eef7de;
+}
+
+.even {
+  background: #bcd1f2;
+}

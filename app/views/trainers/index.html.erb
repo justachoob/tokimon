@@ -17,7 +17,7 @@
 
   <tbody>
     <% @trainers.each do |trainer| %>
-      <tr>
+      <tr class="<%= cycle('odd', 'even') %>">
         <td><%= trainer.trname %></td>
         <td><%= trainer.level %></td>
         <td><%= trainer.gender %></td>

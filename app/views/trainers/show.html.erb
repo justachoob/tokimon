@@ -38,5 +38,17 @@
   <% end %>
 </ul>
 
+
+
+<% @trainer.tokimons.each do |tokimon| %>
+    <div class="div_box" style="width:<%=tokimon.weight%>px; height:<%=tokimon.height%>px; color: black">
+        <p class="s_box"><%= tokimon.tkname %></p>
+        <p class="s_box">Abilities Total: <%= tokimon.total  %></p>
+    </div>
+<% end %>
+    
+<br>
+
+
 <%= link_to 'Edit', edit_trainer_path(@trainer) %> |
 <%= link_to 'Back', trainers_path %>

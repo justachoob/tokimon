@@ -1,0 +1,15 @@
+<h1>Displaying Tokimon as relative size</h1>
+
+<% @tokimons.each do |tokimon| %>
+  <div class="div_box" style="width:<%=tokimon.weight%>px; height:<%=tokimon.height%>px; color: black">
+    <p class="s_box"><%= tokimon.tkname %></p>
+    <p class="s_box"><%= tokimon.total  %></p>
+    
+  </div>
+<% end %>
+
+
+
+
+<br>
+<%= link_to 'Back', tokimons_path %>

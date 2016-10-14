@@ -15,6 +15,11 @@ before_action :set_tokimon, only: [:show, :edit, :update, :destroy]
   # GET /tokimons/1/edit
   def edit
   end
+  
+  def display
+    @tokimons = Tokimon.all
+  end
+  
 
 
   # GET /tokimons/new
@@ -28,6 +33,8 @@ before_action :set_tokimon, only: [:show, :edit, :update, :destroy]
   # POST /tokimons
   # POST /tokimons.json
   def create
+    
+    
     @tokimon = Tokimon.new(tokimon_params)
 
     respond_to do |format|

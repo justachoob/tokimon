@@ -19,6 +19,7 @@ Rails.application.routes.draw do
 
   get 'tokimons/form'
   
+  get 'tokimons/display' 
   #match	':controller(/:action(/:id))',	:via	=>	:get
   #match	':controller(/:action(/:id))',	:via	=>	:post
   resources :tokimons
@@ -28,10 +29,6 @@ Rails.application.routes.draw do
   root 'trainers#index'
   
   #create display pages
-  #get 'tokimons/display' 
-  #resources :tokimons do
-  #  member do
-  #    get 'display'
-  #  end
-  #end
+
+
 end

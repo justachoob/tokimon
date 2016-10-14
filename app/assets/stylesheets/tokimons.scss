@@ -1,3 +1,38 @@
 // Place all the styles related to the Tokimons controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+table {
+  height: 30px;
+  width: 1200px;
+  border: 1px solid;
+  border-color: black;
+  text-align: center;
+}
+
+thead {
+  background-color: #4286f4;
+  color: white;
+}
+
+.odd {
+  background: #eef7de;
+}
+
+.even {
+  background: #bcd1f2;
+}
+
+p.s_box {
+  line-height: 100%;
+  font-size: 16px;
+}
+
+div.div_box {
+  display: inline-block;
+  vertical-align: bottom;
+  border: 2px solid;
+  text-align: center;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  margin: 10px;
+}

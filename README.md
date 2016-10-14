@@ -20,7 +20,9 @@ Trainers:
   * **Id:**  Corresponding ID for creation in the table
     
 Individual Trainer Pages:
+####Extra Feature:
 All above information is displayed, plus related Tokimons are listed and a link to the details of each tokimon exists.
+Relative Size of each tokimon owned by the trainer is also displayed as boxes!
 
 Tokimons:
   * **Name**
@@ -37,5 +39,8 @@ Tokimons:
     
 Individual Tokimon Pages:
 Displays all above information, plus a link to their trainer pages
+
+Display Relative Pages
+Can compare the size of all available tokimon in tokimon database.
 
 
