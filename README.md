@@ -10,6 +10,9 @@ Create two database models for Tokimons and Trainers, maintain both databases in
 ###GIT LINK:
  https://github.com/justachoob/tokimon
  
+###MockUP:
+ https://github.com/justachoob/tokimon/blob/master/mockupthing.pdf
+ 
 ###Features:
 Trainers:
   * **Name**
@@ -18,11 +21,13 @@ Trainers:
   * **Country:** Text Input
   * **Motto:**  Text Input such as "Gotta Catch Them all"
   * **Id:**  Corresponding ID for creation in the table
+  * **Team:** Red blue or yellow!
     
 Individual Trainer Pages:
 ####Extra Feature:
 All above information is displayed, plus related Tokimons are listed and a link to the details of each tokimon exists.
 Relative Size of each tokimon owned by the trainer is also displayed as boxes!
+In the show page, Trainer name will change color based on team chosen! (Was testing rails generate migration add_fieldname_to_tablename fieldname:string in rails)
 
 Tokimons:
   * **Name**
@@ -40,6 +45,7 @@ Tokimons:
 Individual Tokimon Pages:
 Displays all above information, plus a link to their trainer pages
 
+####Extra Feature:
 Display Relative Pages
 Can compare the size of all available tokimon in tokimon database.
 

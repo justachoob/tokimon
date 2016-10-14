@@ -41,6 +41,11 @@
     <%= f.label :id %>
     
   </div>
+  
+  <div class="field">
+    <%= f.label :team %>
+    <%= f.select :team, ["red", "blue", "yellow"] %>
+  </div>
 
   <div class="actions">
     <%= f.submit %>
