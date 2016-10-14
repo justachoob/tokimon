@@ -14,10 +14,10 @@ Create two database models for Tokimons and Trainers, maintain both databases in
 Trainers:
   * **Name**
   * **Level:** For every 3 tokimon owned, level is increased by 1. Starts at 0
-  * **Gender:**
-  * **Country:**
-  * **Motto:**
-  * **Id:**
+  * **Gender:** Choice between Male, Female or Other {Other include things like helicopter...}
+  * **Country:** Text Input
+  * **Motto:**  Text Input such as "Gotta Catch Them all"
+  * **Id:**  Corresponding ID for creation in the table
     
 Individual Trainer Pages:
 All above information is displayed, plus related Tokimons are listed and a link to the details of each tokimon exists.
